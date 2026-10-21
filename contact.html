@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mein Portfolio; Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>Mich kontaktieren</h1>
+        <nav>
+
+            <ul>
+                <li><a href="index.html" title="Accueil">Accueil</a></li>
+                <li><a href="menu.html" title="Voir le menu">Voir le menu</a></li>
+                <li><a href="contact.html" title="Nous contacter">Contact</a></li>
+                <li><a href="#ueber-mich">Über mich</a></li>
+                <li><a href="#meine-faehigkeiten">Meine Fähigkeiten</a></li>
+                <li><a href="#meine-projekte">Meine Projekte</a></li>
+            </ul>
+
+        </nav>
+
+        <img src="img/Foto2_menu_portfolio.jpg" alt="Profilbild" width="350" height="350">
+        <p>Willkommen auf meiner Portfolio-Webseite!</p>
+    </header>   
+    
+    <section>
+        <h2>Kontaktinformationen</h2>
+
+        <p>
+            Sie können mich per E-Mail unter <a href="mailto:sidinestino@gmail.com">E-Mail</a> erreichen.
+        </p>
+        <p> Gerhart Hauptmann Straße 24, <br>
+            67663 Kaiserslautern <br>
+            Deutschland
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.0608102274264!2d7.750474277062258!3d49.429993671415325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47966d5299367ff9%3A0xfeb5b568e12f0fcb!2sGerhart-Hauptmann-Stra%C3%9Fe%2024%2C%2067663%20Kaiserslautern!5e1!3m2!1sfr!2sde!4v1792609342689!5m2!1sfr!2sde" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        <h2> Kontaktformular : Lassen Sie eine Nachricht</h2>
+        <form action="mailto:sidinestino@gmail.com" method="post" enctype="text/plain">
+            <div>
+                <label for="firstname">Ihre Vorname:  <sup>*</sup></label><br>
+                <input type="text" id="firstname" name="firstname" required><br><br>
+            </div>   
+            
+            <div>
+                <label for="lastname">Ihr Nachname: <sup>*</sup></label><br>
+                <input type="text" id="lastname" name="lastname" required ><br><br>
+            </div> 
+
+            <div>
+                <label for="email">Ihre E-Mail: <sup>*</sup></label><br>
+                <input type="email" id="email" name="email" required placeholder="Ihre@email.com"><br><br>
+            </div>    
+
+            <div>
+                <label for="num">Ihre Telefonnummer: </label><br>
+                <input type="tel" id="num" name="num"><br><br>
+            </div> 
+
+            <div>
+                <label for="message">Ihre Nachricht: <sup>*</sup></label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            </div>
+
+            <input type="submit" value="Senden">
+            <input type="reset" value="Zurücksetzen">
+            <!-- <button type="submit" value="Senden">Senden</button> -->
+
+        </form>
+    </section>
+
+    <footer>
+        <address>Gerhart Hauptmann Straße 24, 67663 Kaiserslautern </address> 
+        <p>Kontakt: <a href="mailto:sidinestino@gmail.com">E-Mail</a></p>
+        <p>&copy; 2024 Mein Portfolio. Alle Rechte vorbehalten.</p>
+        
+    </footer>
+
+
+    
+</body>
+</html>
