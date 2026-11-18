@@ -1,107 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Meine Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio von Nestor Sidi Toukea: Informatikstudium, Softwareentwicklung, Datenanalyse und Projekte.">
+    <meta name="theme-color" content="#10243b">
+    <title>Nestor Sidi Toukea | Informatik & Softwareentwicklung</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
-        <h1>Mein Portfolio</h1>
-        <nav>
+    <!-- Barrierefreiheit: Tastaturnutzer können direkt zum Inhalt springen. -->
+    <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
 
-            <ul>
-                <li><a href="index.html" title="Accueil">Accueil</a></li>
-                <li><a href="menu.html" title="Voir le menu">Voir le menu</a></li>
-                <li><a href="contact.html" title="Nous contacter">Contact</a></li>
-                <li><a href="#ueber-mich">Über mich</a></li>
-                <li><a href="#meine-faehigkeiten">Meine Fähigkeiten</a></li>
-                <li><a href="#meine-projekte">Meine Projekte</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Nestor Sidi Toukea – Startseite">Nestor<span>.</span></a>
+            <nav class="site-nav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Start</a></li>
+                    <li><a href="#ueber-mich">Über mich</a></li>
+                    <li><a href="#faehigkeiten">Fähigkeiten</a></li>
+                    <li><a href="#projekte">Projekte</a></li>
+                    <li><a href="#erfahrung">Erfahrung</a></li>
+                    <li><a href="menu.html">Übersicht</a></li>
+                    <li><a class="nav-contact" href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        </nav>
+    <main id="hauptinhalt">
+        <!-- Tag 1–2: Hero-Bereich mit Name, Ziel und Profilfoto. -->
+        <section class="hero" id="start" aria-labelledby="hero-titel">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">Portfolio · Informatik · Softwareentwicklung</p>
+                    <h1 id="hero-titel">Hallo, ich bin <span>Nestor Sidi Toukea.</span></h1>
+                    <p class="hero-lead">Informatikstudent mit Interesse an Softwareentwicklung, Webtechnologien und Datenanalyse.</p>
+                    <p>Ich lerne gerne neue Technologien kennen und setze mein Wissen in Studienprojekten und praktischen Tätigkeiten ein.</p>
+                    <div class="button-row">
+                        <a class="button button-primary" href="#projekte">Meine Projekte ansehen</a>
+                        <a class="button button-secondary" href="contact.html">Kontakt aufnehmen</a>
+                    </div>
+                    <ul class="hero-facts" aria-label="Kurzprofil">
+                        <li>Studium in Kaiserslautern</li>
+                        <li>Software & Daten</li>
+                        <li>Teamarbeit & Lernen</li>
+                    </ul>
+                </div>
+                <figure class="hero-photo">
+                    <img src="img/mein_portofolio_bild.jpg" alt="Porträtfoto von Nestor Sidi Toukea" width="827" height="1051">
+                    <figcaption>Offen für neue Herausforderungen und Projekte.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-        <img src="img/mein_portofolio_bild.jpg" alt="Profilbild" width="350" height="350">
-        <p>Willkommen auf meiner Portfolio-Webseite!</p>
-    </header>  
+        <!-- Tag 2: Über-mich-Abschnitt. -->
+        <section class="section" id="ueber-mich" aria-labelledby="ueber-mich-titel">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">01 / Persönlichkeit</p>
+                    <h2 id="ueber-mich-titel">Über mich</h2>
+                    <p>Was mich antreibt und wie ich arbeite.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="surface about-copy">
+                        <p>Ich studiere Informatik in Kaiserslautern. Besonders interessieren mich die Entwicklung von Software, die Gestaltung von Webanwendungen und der sinnvolle Umgang mit Daten.</p>
+                        <p>Durch Praktika, universitäre Projekte sowie Tätigkeiten als Tutor und Betreuer habe ich gelernt, technische Themen verständlich zu erklären und im Team Lösungen zu erarbeiten.</p>
+                        <p>Mein Ziel ist es, meine theoretischen Kenntnisse weiter in praktischen Softwareprojekten einzusetzen und mich fachlich kontinuierlich zu entwickeln.</p>
+                    </div>
+                    <aside class="surface about-aside" aria-label="Schwerpunkte">
+                        <h3>Meine Schwerpunkte</h3>
+                        <ul class="check-list">
+                            <li>Probleme analysieren und lösen</li>
+                            <li>Software entwickeln</li>
+                            <li>Daten aufbereiten und auswerten</li>
+                            <li>Wissen teilen und im Team arbeiten</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
 
-    <article>
-        <h2>Über mich</h2>
+        <!-- Tag 3: Listen und sinnvoll gruppierte Fähigkeiten. -->
+        <section class="section section-muted" id="faehigkeiten" aria-labelledby="faehigkeiten-titel">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / Werkzeuge</p>
+                    <h2 id="faehigkeiten-titel">Meine Fähigkeiten</h2>
+                    <p>Technologien, mit denen ich mich im Studium, in Projekten und während der Front-End-Ausbildung beschäftige.</p>
+                </div>
+                <div class="skills-grid">
+                    <article class="surface skill-card">
+                        <h3>Webentwicklung</h3>
+                        <ul class="tag-list">
+                            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>TypeScript</li>
+                        </ul>
+                    </article>
+                    <article class="surface skill-card">
+                        <h3>Programmierung & Backend</h3>
+                        <ul class="tag-list">
+                            <li>Java</li><li>Python</li><li>Mini F#</li><li>Spring Boot</li><li>Node.js</li>
+                        </ul>
+                    </article>
+                    <article class="surface skill-card">
+                        <h3>Daten & Arbeitsweise</h3>
+                        <ul class="tag-list">
+                            <li>MySQL</li><li>PostgreSQL</li><li>Excel</li><li>Datenanalyse</li><li>Teamarbeit</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="section-note">Diese Liste zeigt meine bisherigen Berührungspunkte und Lernfelder – nicht für jede Technologie denselben Erfahrungsstand.</p>
+            </div>
+        </section>
 
-        <p>
-            Ich bin nicht nur ein engagierter, sondern auch ein neugieriger und
-            lernbereiter Informatikstudent mit soliden Grundlagen in der
-            Programmierung in Java, HTML, React und anderen Programmiersprachen,
-            sowie in Datenanalyse und Office-Anwendungen.
+        <!-- Tag 3 und Tag 10: Die echten Projektnamen stammen aus dem ursprünglichen Portfolio. -->
+        <section class="section" id="projekte" aria-labelledby="projekte-titel">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / Praxis</p>
+                    <h2 id="projekte-titel">Meine Projekte</h2>
+                    <p>Eine Auswahl meiner Projekte. Technische Details und Links ergänze ich, sobald die Projektbeschreibungen fertig sind.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="surface project-card">
+                        <div class="project-top"><span class="project-number">01</span><span class="project-type">Spielprojekt</span></div>
+                        <h3>Sushi Go</h3>
+                        <p>Ein Projekt aus meiner bisherigen Projektliste. Die Beschreibung der Spielmechanik, der eingesetzten Technologien und meines Beitrags folgt.</p>
+                        <p class="project-note">Dokumentation in Vorbereitung</p>
+                    </article>
+                    <article class="surface project-card">
+                        <div class="project-top"><span class="project-number">02</span><span class="project-type">Softwareprojekt</span></div>
+                        <h3>Smart Mensa</h3>
+                        <p>Ein Softwareprojekt aus meinem Studium. Hier werde ich die Funktionen, die Architektur und meinen persönlichen Beitrag dokumentieren.</p>
+                        <p class="project-note">Dokumentation in Vorbereitung</p>
+                    </article>
+                    <article class="surface project-card">
+                        <div class="project-top"><span class="project-number">03</span><span class="project-type">Spielprojekt</span></div>
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>Ein weiteres Projekt aus meiner Liste. Eine kurze Beschreibung der Spiellogik, der Programmiersprache und des Codes folgt.</p>
+                        <p class="project-note">Dokumentation in Vorbereitung</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-            Meine Tätigkeit als Betreuer und Tutor sowie meine durch Praktika und
-            Uni-Projekte erworbenen Erfahrungen haben meine Kommunikationsfähigkeiten,
-            meine Arbeitsweise und meine Geduld gestärkt. Mit einer Leidenschaft für
-            Problemlösung durch Softwareentwicklung und Teamarbeit strebe ich eine
-            Werkstudententätigkeit im Bereich Informatik, insbesondere Softwareentwicklung,
-            an, um praktische Erfahrungen zu sammeln und mein an der Universität
-            gelerntes theoretisches Wissen anzuwenden, um innovative Ideen in Ihr
-            Projektteam einzubringen und zur Digitalisierung beizutragen. Hohe
-            Lernbereitschaft, Motivation und Teamgeist zeichnen mich aus.
-        </p>  
+        <section class="section section-muted" id="erfahrung" aria-labelledby="erfahrung-titel">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">04 / Beruflicher Weg</p>
+                    <h2 id="erfahrung-titel">Erfahrungen</h2>
+                    <p>Praktische Tätigkeiten, bei denen ich technische und soziale Fähigkeiten einsetzen konnte.</p>
+                </div>
+                <div class="timeline">
+                    <article class="surface timeline-item">
+                        <p class="timeline-date">2026</p>
+                        <h3>Inspirer · City Hacker School</h3>
+                        <p class="timeline-place">Hochschule Kaiserslautern</p>
+                        <p>Unterstützung von Schülerinnen und Schülern beim Einstieg in HTML, CSS und JavaScript sowie beim Verstehen grundlegender Programmierkonzepte.</p>
+                    </article>
+                    <article class="surface timeline-item">
+                        <p class="timeline-date">März – Oktober 2026</p>
+                        <h3>Werkstudent · Datenbereinigung und Datenanalyse</h3>
+                        <p class="timeline-place">Landestierärztekammer Rheinland-Pfalz</p>
+                        <p>Aufbereitung, Prüfung und Analyse von Daten zur Verbesserung der Datenqualität und interner Arbeitsabläufe.</p>
+                    </article>
+                    <article class="surface timeline-item">
+                        <p class="timeline-date">Seit Oktober 2026</p>
+                        <h3>Tutor · Künstliche Intelligenz</h3>
+                        <p class="timeline-place">Universität Kaiserslautern</p>
+                        <p>Begleitung von Übungsgruppen und Unterstützung beim Verständnis von Grundlagen und Algorithmen der künstlichen Intelligenz.</p>
+                    </article>
+                    <article class="surface timeline-item">
+                        <p class="timeline-date">Juli – August 2025</p>
+                        <h3>Praktikum · Softwareentwicklung</h3>
+                        <p class="timeline-place">Weptech Elektronik GmbH</p>
+                        <p>Einblicke in Softwareentwicklung, technische Arbeitsabläufe und praktische Programmieraufgaben.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <hr>
+        <section class="section" id="ausbildung" aria-labelledby="ausbildung-titel">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">05 / Lernen</p>
+                    <h2 id="ausbildung-titel">Ausbildung</h2>
+                </div>
+                <div class="surface education-card">
+                    <div>
+                        <h3>Studium der Informatik</h3>
+                        <p>Technische Universität Kaiserslautern / RPTU</p>
+                    </div>
+                    <p class="education-date">Seit Oktober 2024</p>
+                </div>
+            </div>
+        </section>
 
-        <h2>Meine Fähigkeiten</h2>
-        <ul>
-            <li>Programmiersprachen: Java, HTML, CSS, JavaScript, MiniF#, Python</li>
-            <li>Frameworks: React, Node.js, SpringBoot</li>
-            <li>Datenanalyse : MySQL, PostgreSQL, Excel, Python (Pandas, NumPy)</li>
-            <li>Office-Anwendungen</li>
-            <li>Kommunikationsfähigkeiten</li>
-            <li>Teamarbeit</li>
-        </ul>
+        <section class="section cta-section" aria-labelledby="kontakt-teaser-titel">
+            <div class="container cta-inner">
+                <div>
+                    <p class="eyebrow">06 / Austausch</p>
+                    <h2 id="kontakt-teaser-titel">Lass uns in Kontakt bleiben.</h2>
+                    <p>Fragen zu meinen Projekten, zur Zusammenarbeit oder zu meinem Werdegang?</p>
+                </div>
+                <a class="button button-light" href="contact.html">Zur Kontaktseite</a>
+            </div>
+        </section>
+    </main>
 
-        <hr>
-
-        <h2>Meine Projekte</h2>
-            <ul>
-                <li>Projekt 1: Sushi Go</li>
-                <li>Projekt 2: Smart Mensa</li>
-                <li>Projekt 3: TikTak Toe</li>
-            </ul>
-        
-        <hr>
-
-        <h2>Meine Tätigkeit</h2>
-        <ul>
-            <li><p> Tätigkeit 1: Tätigkeit als Werkstudent in der Informatik: 
-            Ich bin derzeit als Werkstudent in der Informatik besonders bei dem Data Bereininung und Analyse Bereich tätig 
-            und suche nach weiteren Möglichkeiten, mein Wissen und meine Fähigkeiten in einem professionellen Umfeld einzubringen.
-            </p></li>
-            <li><p> Tätigkeit 2: Inspirer bei dem Hacker City School an der Hochschule Kaiserslautern : 
-            Ich habe die Möglichkeit am September 2026 ergreift, meine Leidenschaft für Informatik und Technologie mit Schülern und Schülerinnen zu teilen 
-            und ihnen dabei geholfen, Spaß an der Informatik insbesondere zu der Programmierung in HTMLL, CSS, JavaScript zu entwickeln und 
-            ihre Fähigkeiten in diesem Bereich zu fördern.
-            </p></li>
-            <li><p> Tätigkeit 3: Tätigkeit als Tutor von der Vorlesung Künstliche Intelligenz an der Technischen Universität Kaiserslautern : 
-            Ab Oktober 2026 habe ich die Möglichkeit, meine Kenntnisse und meine Leidenschaft für Informatik, Künstliche Intelligenz, Machine Learning und Technologie mit Studenten 
-            und Studentinnen zu teilen.  In der Rolle als Tutor von der Vorlesung Künstliche Intelligenz an der Technischen Universität Kaiserslautern sind meine Aufgaben, 
-            den Studierenden bei der Lösung von Aufgaben und Projekten zu helfen, Fragen zu beantworten und ihnen bei der Vertiefung ihres Verständnisses 
-            für die Konzepte der Künstlichen Intelligenz zu unterstützen. Koordinierte Übungsgruppen und förderte den interaktiven Austausch zwischen Studierenden und Dozenten.    
-            Entwickelte und implementierte didaktische Konzepte zur Vermittlung von KI Grundlagen an der Universität. Betreute Studierende in der Vorlesung Künstliche Intelligenz und unterstützte
-            sie bei der Anwendung komplexer Algorithmen
-            </p></li>
-            
-        
-        </ul>
-
-    </article>
-
-    <footer>
-        <address>Gerhart Hauptmann Straße 24, 67663 Kaiserslautern </address> 
-        <p>Kontakt: <a href="mailto:sidinestino@gmail.com">E-Mail</a></p>
-        <p>&copy; 2024 Mein Portfolio. Alle Rechte vorbehalten.</p>
-        
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Nestor Sidi Toukea · Portfolio</p>
+            <div class="footer-links">
+                <a href="mailto:siditoukeanestor@gmail.com">E-Mail</a>
+                <a href="https://github.com/Nestino-123" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="document/programme.pdf">Formation JustCode (PDF)</a>
+            </div>
+        </div>
     </footer>
-
-
-    
 </body>
 </html>

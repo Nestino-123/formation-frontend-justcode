@@ -1,37 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Mein Portfolio; das Menü</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Übersicht über das Portfolio und den Lernweg von Nestor Sidi Toukea.">
+    <meta name="theme-color" content="#10243b">
+    <title>Übersicht | Nestor Sidi Toukea</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
-        <h1>Das Menü von meinem Portfolio</h1>
-        <nav>
+    <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Nestor Sidi Toukea – Startseite">Nestor<span>.</span></a>
+            <nav class="site-nav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="index.html#ueber-mich">Über mich</a></li>
+                    <li><a href="index.html#faehigkeiten">Fähigkeiten</a></li>
+                    <li><a href="index.html#projekte">Projekte</a></li>
+                    <li><a href="index.html#erfahrung">Erfahrung</a></li>
+                    <li><a href="menu.html" aria-current="page">Übersicht</a></li>
+                    <li><a class="nav-contact" href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <ul>
-                <li><a href="index.html" title="Accueil">Accueil</a></li>
-                <li><a href="menu.html" title="Voir le menu">Voir le menu</a></li>
-                <li><a href="contact.html" title="Nous contacter">Contact</a></li>
-                <li><a href="#ueber-mich">Über mich</a></li>
-                <li><a href="#meine-faehigkeiten">Meine Fähigkeiten</a></li>
-                <li><a href="#meine-projekte">Meine Projekte</a></li>
-            </ul>
+    <main id="hauptinhalt">
+        <section class="page-hero">
+            <div class="container page-hero-grid">
+                <div>
+                    <p class="eyebrow">Wegweiser</p>
+                    <h1>Portfolio-Übersicht</h1>
+                    <p>Diese Seite hilft dir, die Inhalte meines Portfolios und meinen Lernfortschritt schnell zu finden.</p>
+                </div>
+                <img class="page-hero-image" src="img/Foto_menu_portfolio.jpg" alt="Schreibtisch mit Lebenslauf und Laptop" width="640" height="427">
+            </div>
+        </section>
 
-        </nav>
+        <section class="section" aria-labelledby="bereiche-titel">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Direkt zu den Inhalten</p>
+                    <h2 id="bereiche-titel">Bereiche entdecken</h2>
+                </div>
+                <div class="overview-grid">
+                    <a class="surface overview-link" href="index.html#ueber-mich"><strong>Über mich</strong><span>Persönliche Vorstellung und Ziele</span></a>
+                    <a class="surface overview-link" href="index.html#faehigkeiten"><strong>Fähigkeiten</strong><span>Programmiersprachen und Werkzeuge</span></a>
+                    <a class="surface overview-link" href="index.html#projekte"><strong>Projekte</strong><span>Sushi Go, Smart Mensa und Tic-Tac-Toe</span></a>
+                    <a class="surface overview-link" href="index.html#erfahrung"><strong>Erfahrungen</strong><span>Praktika, Werkstudententätigkeit und Tutorium</span></a>
+                    <a class="surface overview-link" href="index.html#ausbildung"><strong>Ausbildung</strong><span>Mein Informatikstudium</span></a>
+                    <a class="surface overview-link" href="contact.html"><strong>Kontakt</strong><span>E-Mail und Kontaktformular</span></a>
+                </div>
+            </div>
+        </section>
 
-        <img src="img/Foto_menu_portfolio.jpg" alt="Profilbild" width="650" height="650">
-        <p>Willkommen auf meiner Portfolio-Webseite!</p>
+        <section class="section section-muted" aria-labelledby="lernweg-titel">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">JustCode Front-End</p>
+                    <h2 id="lernweg-titel">Mein Lernweg</h2>
+                    <p>Die Ausbildung entwickelt das Portfolio schrittweise weiter.</p>
+                </div>
+                <ol class="learning-steps">
+                    <li><strong>HTML</strong><span>Struktur und Inhalte (Portfolio V1)</span></li>
+                    <li><strong>CSS</strong><span>Layout und Responsive Design (Portfolio V2)</span></li>
+                    <li><strong>JavaScript</strong><span>Interaktionen und Browser-APIs (Portfolio V3)</span></li>
+                    <li><strong>React</strong><span>Komponenten und Anwendung (Portfolio V4)</span></li>
+                </ol>
+                <p class="section-note">Das <a href="document/programme.pdf">vollständige Ausbildungsprogramm (PDF)</a> liegt im Ordner <code>document/</code>.</p>
+            </div>
+        </section>
+    </main>
 
-    </header> 
-
-    <footer>
-        <address>Gerhart Hauptmann Straße 24, 67663 Kaiserslautern </address> 
-        <p>Kontakt: <a href="mailto:sidinestino@gmail.com">E-Mail</a></p>
-        <p>&copy; 2024 Mein Portfolio. Alle Rechte vorbehalten.</p>
-        
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Nestor Sidi Toukea · Portfolio</p>
+            <div class="footer-links">
+                <a href="mailto:siditoukeanestor@gmail.com">E-Mail</a>
+                <a href="https://github.com/Nestino-123" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="index.html">Startseite</a>
+            </div>
+        </div>
     </footer>
-    
 </body>
 </html>
